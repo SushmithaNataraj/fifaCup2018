@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization - Homework 5 - Exploring the 2018 World Coup </title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://d3js.org/d3.v5.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <header>
+        <img src="assets/fifa_russia_logo.png" alt="WC Russia Logo" id="logo"/>
+        <h1>Exploring Match Statistics for 2018 World Cup: CS-5630/6630 Homework</h1>
+        <div>Name: Sushmitha S N; E-Mail: sushmitha.sn@utah.edu; UID: u1265043</div>
+    </header>
+
+    <div class="view">
+        <h2>Score Table</h2>
+
+        <table id="matchTable">
+            <thead>
+            <tr>
+                <th id="team">Team</th>
+                <td id="goals" style="text-align:center"> Goals <span class="glyphicon glyphicon-sort"></span><br/></td>
+                <td id="result">Round/Result</td>
+                <td id="wins">Wins</td>
+                <td id="losses">Losses</td>
+                <td id="totalGames">Total Games</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="goalHeader"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </div>
+    <div id="tree-map" class="view">
+
+
+        <h2>Second Stage</h2>
+        <svg width="500" height="900">
+            <g id="tree"></g>
+        </svg>
+    </div>
+
+</div>
+<!--<script type="application/javascript" src="load_hacker.js"></script>-->
+<script src="js/tree.js"></script>
+<script src="js/table.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
